@@ -12,7 +12,9 @@ module FormsLab
     end 
     
     post '/pirates' do 
-      @pirate=P
+      @pirate=Pirate.new(params[:name],params[:weight],params[:height])
+      
+      
       
       
       
