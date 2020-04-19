@@ -1,16 +1,18 @@
 <h1>Welcome Pirates!</h1>
 
-<form method ="POST" action="/show">
+<form method ="POST" action="/pirates">
+  <h2>Pirate</h2>
   <label for="name">Pirate name:</label>
-  <input type="text" id="name" name="name">
+  <input type="text" id="name" name="pirate[name]">
   <label for="weight">Pirate weight:</label>
-  <input type="text" id="weight" name="weight">
+  <input type="text" id="weight" name="pirate[weight]">
   <label for="height">Pirate height:</label>
-  <input type="text" id="weight" name="height"><br>
+  <input type="text" id="weight" name="pirate[height]"><br>
   
-  <label for="ship_1">Ship 1:</label>
-  <input type="text" id="ship_1" name="ship_1"><br>
-  <label for="ship_2">Ship 2:</label>
+  <h2>Ships</h2>
+  <label for="ship_1">Name</label>
+  <input type="text" id="ship_1" name="pirate[ships][][name]"><br>
+  <label for="ship_2"></label>
   <input type="text" id="ship_2" name="ship_2">
   
 </form>
